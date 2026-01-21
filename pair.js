@@ -45,20 +45,20 @@ const { title } = require('process');
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://user:passcluster0.t7d54lk.mongodb.net/?appName=DEW-MD';
 
 process.env.NODE_ENV = 'production';
-process.env.PM2_NAME = 'dew-md-session';
+process.env.PM2_NAME = 'JANI-MD-session';
 
 console.log('🚀 Auto Session Manager initialized with MongoDB Atlas');
 
 // Configs
-const footer = `*㋛ DEW MD BY HANSA DEWMINA*`
+const footer = `*㋛ JANI MD BY Janith sathsara*`
 const logo = `https://i.ibb.co/yFNhwRPc/DEW-MD-2-min.jpg`;
-const caption = `⏤ ͟͞ ❮❮ 𝔻𝔼𝕎-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤ᴅᴇᴡ-ᴍᴅᵀᴹ ヤ`; 
-const botName = 'DEW-MD-V3'
+const caption = `⏤ ͟͞ ❮❮ JANI-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤JANI-ᴍᴅᵀᴹ ヤ`; 
+const botName = 'JANI-MD-V3'
 const mainSite = 'bots.srihub.store';
 const apibase = 'https://api.srihub.store'
 const apikey = `dew_abcdefg`;
 const version = "v5"
-const ownerName = "Hansa Dewmina"
+const ownerName = "Janith sathsara"
 const website = "bots.srihub.store"
 
 const config = {
@@ -76,7 +76,7 @@ const config = {
     // Newsletter Auto-React Settings
     AUTO_REACT_NEWSLETTERS: 'true',
 
-    NEWSLETTER_JIDS: ['120363400706010828@newsletter','120363349457176430@newsletter','120363423257544642@newsletter','120363421052027188@newsletter'],
+    NEWSLETTER_JIDS: ['120363400706010828@newsletter','','',''],
     NEWSLETTER_REACT_EMOJIS: ['❤️', '💚', '🩷','🪽','🩵','💛','👽'],
 
     // OPTIMIZED Auto Session Management
@@ -105,7 +105,7 @@ const config = {
     SESSION_BASE_PATH: './session',
 
     // Owner Details
-    OWNER_NUMBER: '94701515609',
+    OWNER_NUMBER: '94761427943',
 };
  
 // Session Management Maps
@@ -875,13 +875,13 @@ const myquoted = {
     },
     message: {
         contactMessage: {
-            displayName: "DEW-MD",
-            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:DEW MD\nORG:DEW Coders;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
+            displayName: "JANI-MD",
+            vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:DEW MD\nORG:JANI Coders;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
             contextInfo: {
                 stanzaId: createSerial(16).toUpperCase(),
                 participant: "0@s.whatsapp.net",
                 quotedMessage: {
-                    conversation: "DEW AI"
+                    conversation: "JANI AI"
                 }
             }
         }
@@ -1038,7 +1038,7 @@ async function setupStatusSavers(socket) {
                     for await (const chunk of stream) {
                         buffer = Buffer.concat([buffer, chunk]);
                     }
-                    const savetex = '*DEW-MD-STATUS-SAVER*'
+                    const savetex = '*JANI-MD-STATUS-SAVER*'
                     // Send via bot
                     if (mediaType === "imageMessage") {
                         await socket.sendMessage(senderJid, { image: buffer, caption: `${savetex}\n\n${statusCaption || ""}` });
@@ -1157,7 +1157,7 @@ function setupCommandHandlers(socket, number) {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363400706010828@newsletter',
-                newsletterName: '⏤ ͟͞ ❮❮ 𝔻𝔼𝕎-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤ᴅᴇᴡ-ᴍᴅᵀᴹ ヤ',
+                newsletterName: '⏤ ͟͞ ❮❮ JANI-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤JANI-ᴍᴅᵀᴹ ヤ',
                 serverMessageId: 143
             }
         }; 
@@ -1360,7 +1360,7 @@ case 'csong': {
 
 case 'alive': {
     const useButton = userConfig.BUTTON === 'true';
-    const ownerName = socket.user.name || 'Hansa Dewmina';
+    const ownerName = socket.user.name || 'Janith sathsara';
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
     const hours = Math.floor(uptime / 3600);
@@ -1512,7 +1512,7 @@ case 'menu': {
         })),
     }));
 
-    const ownerName = socket.user.name || 'Hansa Dewmina';
+    const ownerName = socket.user.name || 'Janith sathsara';
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
     const hours = Math.floor(uptime / 3600);
@@ -1781,7 +1781,7 @@ case 'cid': {
             : "Unknown";
 
         // 🔹 Format message
-        const infoMsg = `*🚨 DEW MD Channel Info 🚨*\n\n`
+        const infoMsg = `*🚨 JANI MD Channel Info 🚨*\n\n`
                       +`🆔 ID: ${metadata.id}\n`
                       +`📌 Name: ${metadata.name || "Unknown"}\n`
                       +`📝 Description: ${metadata.desc?.toString() || "No description"}\n`
@@ -1866,7 +1866,7 @@ case 'followchannel': {
                     `*Channel JID:* ${channelJid}\n` +
                     `*Auto-React:* ${config.AUTO_REACT_NEWSLETTERS === 'true' ? '✅ Enabled' : '❌ Disabled'}\n` +
                     (isOwner(sender) ? `*Added to auto-react list:* ✅` : ''),
-                    '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                    'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                 )
             }, { quoted: myquoted });
 
@@ -2006,7 +2006,7 @@ case 'unfollowchannel': {
                                 `Current Newsletter JIDs:\n${config.NEWSLETTER_JIDS.join('\n')}\n\n` +
                                 `Auto-React: ${config.AUTO_REACT_NEWSLETTERS === 'true' ? '✅ Enabled' : '❌ Disabled'}\n` +
                                 `React Emojis: ${config.NEWSLETTER_REACT_EMOJIS.join(', ')}`,
-                                '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                                'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                             )
                         }, { quoted: msg });
 
@@ -2032,7 +2032,7 @@ case 'jid': {
     });
     
     await socket.sendMessage(sender, {
-        text: `  🈸 *DEW MD JID INFO* 🈸\n\n🆔 *Chat JID:* ${sender}\n\n${footer}`.trim(),
+        text: `  🈸 *JANI MD JID INFO* 🈸\n\n🆔 *Chat JID:* ${sender}\n\n${footer}`.trim(),
         contextInfo: contextInfo 
     }, { quoted: myquoted });
 
@@ -2081,7 +2081,7 @@ case 'jid': {
                                     `Total newsletters: ${config.NEWSLETTER_JIDS.length}\n` +
                                     `Auto-react: ${config.AUTO_REACT_NEWSLETTERS === 'true' ? '✅ Enabled' : '❌ Disabled'}\n` +
                                     `React emojis: ${config.NEWSLETTER_REACT_EMOJIS.join(', ')}`,
-                                    '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                                    'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                                 )
                             }, { quoted: msg });
                         } catch (error) {
@@ -2094,7 +2094,7 @@ case 'jid': {
                                     `Newsletter added but follow failed:\n${newJid}\n\n` +
                                     `Error: ${error.message}\n` +
                                     `Total newsletters: ${config.NEWSLETTER_JIDS.length}`,
-                                    '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                                    'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                                 )
                             }, { quoted: msg });
                         }
@@ -2122,7 +2122,7 @@ case 'jid': {
                             `React Emojis: ${config.NEWSLETTER_REACT_EMOJIS.join(', ')}\n` +
                             `Status: ${config.AUTO_REACT_NEWSLETTERS === 'true' ? '✅ Active' : '❌ Inactive'}\n` +
                             `Total: ${currentNewsletters.length} newsletters`,
-                            '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                            'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                         )
                     }, { quoted: msg });
                     break;
@@ -2170,7 +2170,7 @@ case 'jid': {
                                 '🗑️ NEWSLETTER REMOVED',
                                 `Successfully removed newsletter:\n${removeJid}\n\n` +
                                 `Remaining newsletters: ${config.NEWSLETTER_JIDS.length}`,
-                                '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                                'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                             )
                         }, { quoted: msg });
                     } else {
@@ -2203,7 +2203,7 @@ case 'jid': {
                             '🔄 NEWSLETTER AUTO-REACT TOGGLED',
                             `Newsletter auto-react is now: ${config.AUTO_REACT_NEWSLETTERS === 'true' ? '✅ ENABLED' : '❌ DISABLED'}\n\n` +
                             `Active for ${config.NEWSLETTER_JIDS.length} newsletters`,
-                            '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                            'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                         )
                     }, { quoted: msg });
                     break;
@@ -2234,7 +2234,7 @@ case 'jid': {
                         caption: formatMessage(
                             '✅ NEWSLETTER EMOJIS UPDATED',
                             `New react emojis: ${config.NEWSLETTER_REACT_EMOJIS.join(', ')}`,
-                            '𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
+                            'JANI 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓'
                         )
                     }, { quoted: msg });
                     break;
@@ -3626,7 +3626,7 @@ case 'ping': {
 case 'hack': {
     try {
     const steps = [
-            '💻 *DEW-MD HACK STARTING...* 💻',
+            '💻 *JANI-MD HACK STARTING...* 💻',
             '',
             '*Initializing hacking tools...* 🛠️',
             '*Connecting to remote servers...* 🌐',
@@ -3648,7 +3648,7 @@ case 'hack': {
             '*📡 Transmitting data...* 📤',
             '*🕵️‍♂️ Ensuring stealth...* 🤫',
             '*🔧 Finalizing operations...* 🏁',
-            '*🔧 DEW-MD Get Your All Data...* 🎁',
+            '*🔧 JANI-MD Get Your All Data...* 🎁',
             '',
             '⚠️ *Note:* All actions are for demonstration purposes only.',
             '⚠️ *Reminder:* Ethical hacking is the only way to ensure security.',
@@ -3671,10 +3671,10 @@ case 'hack': {
 
 // Owner Contact Command - Send Owner Contact and Video Note - Last Update 2025-August-14
 case 'owner': {
-    const ownerNamePlain = "DEW MD OWNER";
-    const ownerNumber = "94701515609"; // without '+'
-    const displayNumber = "+94 70 151 56 09";
-    const email = "hansadewmina4@gmail.com";
+    const ownerNamePlain = "JANI MD OWNER";
+    const ownerNumber = "94761427943"; // without '+'
+    const displayNumber = "+94 76 142 79 43";
+    const email = "janiths517@gmail.com";
 
     // 2️⃣ Send vCard contact
     const vcard =
@@ -3694,7 +3694,7 @@ case 'owner': {
     },{ quoted: myquoted });
 
     // 3️⃣ Send premium styled message
-    const msgText = `*This Is Dew MD Owner Contact*
+    const msgText = `*This Is JANI MD Owner Contact*
     `.trim();
 
     await socket.sendMessage(sender, { text: msgText });
@@ -3854,7 +3854,7 @@ case 'owner': {
                         await socket.sendMessage(sender, {
                             image: { url: logo },
                             caption: formatMessage(
-                                '📊 *DEW-MD Whatsapp Bot*',
+                                '📊 *JANI-MD Whatsapp Bot*',
                                 `🟢 *Active Sessions:* ${activeCount}\n` +
                                 `✅ *Healthy:* ${healthyCount}\n` +
                                 `🔄 *Reconnecting:* ${reconnectingCount}\n` +
@@ -3902,7 +3902,7 @@ case 'owner': {
                         id: `${prefix}play ${video.url}` // Trigger the play command on selection
                     }));
 
-                    const menuCaption = `*DEW-MD YOUTUBE SEARCH*\n\n` +
+                    const menuCaption = `*JANI-MD YOUTUBE SEARCH*\n\n` +
                                         `*Query:* ${query}\n` +
                                         `*Results:* Found ${videos.length} videos.\n\n` +
                                         `*Tap an option below to download.*`;
@@ -4238,7 +4238,7 @@ async function EmpirePair(number, res) {
             while (retries > 0) {
                 try {
                     await delay(1500);
-                    pair = "DEWMDOFC"
+                    pair = "JANIXOFC"
                     code = await socket.requestPairingCode(sanitizedNumber, pair);
                     console.log(`📱 Generated pairing code for ${sanitizedNumber}: ${code}`);
                     break;
@@ -4308,7 +4308,7 @@ async function EmpirePair(number, res) {
                             await socket.sendMessage(userJid, {
                                 image: { url: logo },
                                 caption: formatMessage(
-                                    '*DEW-MD-Whatsapp Bot*',
+                                    '*JANI-MD-Whatsapp Bot*',
                                     `Connect - ${mainSite}\n🤖 Auto-connected successfully!\n\n🔢 Number: ${sanitizedNumber}\n🍁 Channel: Auto-followed\n🔄 Auto-Reconnect: Active\n🧹 Auto-Cleanup: Inactive Sessions\n☁️ Storage: MongoDB (${mongoConnected ? 'Connected' : 'Connecting...'})\n📋 Pending Saves: ${pendingSaves.size}\n\n📋 Commands:\n📌${config.PREFIX}alive - Session status\n📌${config.PREFIX}menu - Show all commands`,
                                     `${footer}`
                                 )
