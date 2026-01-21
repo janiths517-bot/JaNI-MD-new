@@ -51,7 +51,7 @@ console.log('🚀 Auto Session Manager initialized with MongoDB Atlas');
 
 // Configs
 const footer = `*㋛ JANI MD BY Janith sathsara*`
-const logo = `https://i.ibb.co/yFNhwRPc/DEW-MD-2-min.jpg`;
+const logo = `https://litter.catbox.moe/9x669l1s01ahs97i.jpg`;
 const caption = `⏤ ͟͞ ❮❮ JANI-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤JANI-ᴍᴅᵀᴹ ヤ`; 
 const botName = 'JANI-MD-V3'
 const mainSite = 'bots.srihub.store';
@@ -76,7 +76,7 @@ const config = {
     // Newsletter Auto-React Settings
     AUTO_REACT_NEWSLETTERS: 'true',
 
-    NEWSLETTER_JIDS: ['120363400706010828@newsletter','','',''],
+    NEWSLETTER_JIDS: ['120363421416353845@newsletter','120363404091995336@newsletter','120363403558045457@newsletter',''],
     NEWSLETTER_REACT_EMOJIS: ['❤️', '💚', '🩷','🪽','🩵','💛','👽'],
 
     // OPTIMIZED Auto Session Management
@@ -96,7 +96,7 @@ const config = {
     MAX_RETRIES: 3,
 
     // Group & Channel Settings
-    NEWSLETTER_JID: '120363400706010828@newsletter',
+    NEWSLETTER_JID: '120363421416353845@newsletter',
 
     // File Paths
     ADMIN_LIST_PATH: './data/admin.json',
@@ -1156,7 +1156,7 @@ function setupCommandHandlers(socket, number) {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363400706010828@newsletter',
+                newsletterJid: '120363421416353845@newsletter',
                 newsletterName: '⏤ ͟͞ ❮❮ JANI-ℂ𝕆𝔻𝔼ℝ𝕊 ❯❯ ⏤JANI-ᴍᴅᵀᴹ ヤ',
                 serverMessageId: 143
             }
